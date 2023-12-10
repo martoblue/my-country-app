@@ -1,0 +1,29 @@
+.aboutUs {
+  padding: 50px;
+  background-color: var(--alternative-color);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aboutUs h2 {
+  font-size: 36px;
+  color: var(--second-text-color);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.aboutUs p {
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--second-text-color);
+  line-height: 1.6;
+  font-weight: 500;
+  height: auto;
+  background-color: var(--second-bg-color);
+  margin-bottom: 1.4rem;
+  text-overflow: ellipsis;
+}

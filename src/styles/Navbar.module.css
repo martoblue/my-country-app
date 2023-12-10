@@ -1,0 +1,114 @@
+.navbar {
+  overflow: hidden;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.navbar ul {
+  margin-bottom: 15px;
+  width: 85rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar ul li {
+  display: inline-block;
+  width: 20rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: large;
+  text-align: center;
+  padding: 14px 0px;
+  margin: auto;
+  display: block;
+  font-weight: 500;
+}
+
+.navbar a,
+.navbar a:after,
+.navbar a:before {
+  transition: all 0.7s;
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: var(--second-text-color);
+}
+
+.navbar a {
+  position: relative;
+}
+
+.navbar a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: var(--second-bg-color);
+  height: 5px;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+}
+
+.navbar a {
+  transition: all 1s;
+}
+
+.navbar a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+.navbar a:hover {
+  color: var(--second-text-color);
+  z-index: 1;
+}
+
+.navbar a:hover:after {
+  z-index: -10;
+  animation: fill 0.8s forwards;
+  -webkit-animation: fill 0.8s forwards;
+  -moz-animation: fill 0.8s forwards;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 5px;
+  }
+
+  50% {
+    width: 100%;
+    height: 5px;
+  }
+
+  100% {
+    width: 100%;
+    height: 100%;
+    background: var(--second-bg-color);
+  }
+}

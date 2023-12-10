@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@200;300;400;500;600;700;900&&display=swap');
+
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: #3f6e9d;
+    --main-text-color: #d9ebf7;
+    --second-bg-color: #d9ebf7;
+    --second-text-color: #3f6e9d;
+    --alternative-color: #b3d8e4;
+    --white-color: #ffffff;
+    --black-color: #2a2020;
+    --grey-color: rgb(75, 72, 72)c4c;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.page-enter {
+    opacity: 0;
+}
+
+.page-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}

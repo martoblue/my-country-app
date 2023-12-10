@@ -1,7 +1,18 @@
 {
+  "typeAcquisition": {
+    "include": ["jest"]
+  },
   "compilerOptions": {
+    "module": "esnext",
+
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/components/*": ["src/components/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/services/*": ["src/services/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
